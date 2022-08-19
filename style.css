@@ -61,7 +61,7 @@
     margin-top: 0;
   }
 
-  #social-title {
+  #social-title-1 {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -119,6 +119,7 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
+    color: #172b4d;
   }
 
   .card1 ul {
@@ -143,6 +144,13 @@
     border-radius: 8px;
   }
 
+  .about-list li {
+    background-color: #f7f7f9;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
   .card1 li:first-child {
     color: #344563;
   }
@@ -164,5 +172,172 @@
     list-style: none;
     width: 100%;
     padding: 0;
+  }
+
+  .works button {
+    align-self: flex-start;
+    background-color: #ffff;
+    padding: 12px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #396df2;
+  }
+
+  .about {
+    margin-top: 114px;
+  }
+
+  .about-social {
+    display: grid;
+    grid-column: 1 / -1;
+    margin: 0 24px;
+    gap: 12px;
+    padding-top: 114px;
+  }
+
+  .about-social h2 {
+    /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin: 0;
+    color: #172b4d;
+  }
+
+  .about-social p {
+    /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    color: #344563;
+  }
+
+  .about-social ul {
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    list-style: none;
+    padding: 0;
+  }
+
+  .about-social button {
+    background-color: #ffff;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    color: #396df2;
+    padding: 12px;
+    /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    align-self: flex-start;
+    width: 50%;
+  }
+
+  .about-languages {
+    display: flex;
+    margin: 0 24px;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .about-languages h2 {
+    /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 24px 0 24px 12px;
+  }
+
+  .about-languages p {
+    padding: 33px 40px 33px 0;
+    width: 12px;
+    height: 6;
+    font-size: large;
+    font-weight: bolder;
+    margin: 0;
+  }
+
+  .about-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+    gap: 12px;
+    padding-left: 36px;
+  }
+
+  .about-list img {
+    width: 48px;
+    height: 48px;
+    padding: 9px 16px 9px 12px;
+  }
+
+  .about-list p {
+    /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #253858;
+  }
+
+  .about-list :first-child {
+    padding-left: 9px;
+    /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-list :first-child p {
+    padding-right: 40px;
+  }
+
+  .about-list li:first-child {
+    background-color: white;
+  }
+
+  .about-list li:nth-child(5) {
+    background-color: white;
+    border-bottom: 1px solid #dfe1e6;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-list li:nth-child(5) p {
+    padding-right: 40px;
+  }
+
+  .about-list li:nth-child(6) {
+    background-color: white;
+    border-bottom: 1px solid #dfe1e6;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-list li:nth-child(6) p {
+    padding-right: 40px;
   }
 }
