@@ -150,7 +150,7 @@
         <footer class="contact-form">
         <h2>Contact me</h2>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-        <form action="">
+        <form action="https://formspree.io/f/xlevdjlz" method="POST">
             <ul>
                 <li>
                     <label for="name"></label>
@@ -158,13 +158,16 @@
                 </li>
                 <li>
                     <label for="email"></label>
-                    <input type="email" name="user_email" id="email">
+                    <input type="email" name="user_email" id="email" placeholder="Enter your email">
                 </li>
                 <li>
                     <label for="textarea"></label>
-                    <input type="textarea" name="user_message" id="message" placeholder="write your message here" maxlength="500">
+                    <input type="text" name="user_message" id="message" placeholder="write your message here" maxlength="500">
                 </li>
-                <li><button type="submit">Get in touch</button></li>
+                <li><button type="submit"><span> Get in touch </span></button></li>
+                <li>
+                    <div class="shape"><img src="./assets/Shape.png" alt=""></div>
+                </li>
             </ul>
         </form>
         </footer>
