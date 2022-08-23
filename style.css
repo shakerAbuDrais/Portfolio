@@ -383,6 +383,7 @@
     color: #fff;
     align-items: center;
     text-align: center;
+    padding-top: 103px;
   }
   /* stylelint-disable-next-line no-descending-specificity */
   .contact-form p {
@@ -398,5 +399,34 @@
 
   .contact-form ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .contact-form input {
+    border: 1px solid #CFD8DC;
+    border-radius: 8px;
+    display: flex;
+    min-width: 100%;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+  }
+
+  #message {
+    height: 170px;
+  }
+
+  ::placeholder {
+    padding: 15px 38px 15px 16px;
+  }
+
+  #message::placeholder {
+    display: flex;
+    text-align: start;
+    background-color: rgb(20, 82, 103);
   }
 }
