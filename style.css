@@ -367,7 +367,9 @@
     background-color: #6070ff;
     border-top-left-radius: 80px;
     background-image: url(./assets/contact-form-shapes-mobile.png);
-    margin-top: 114px;
+    background-size: 50%;
+    background-position: right;
+    background-repeat: no-repeat;
   }
 
   .contact-form {
