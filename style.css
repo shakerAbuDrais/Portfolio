@@ -19,6 +19,10 @@
     align-items: baseline;
   }
 
+  header ul {
+    display: none;
+  }
+
   header a {
     /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
     font-family: 'Poppins';
@@ -467,5 +471,179 @@
   .shape {
     display: flex;
     justify-content: center;
+  }
+
+  h2.title360-d,
+  li.year-d,
+  li.ruby-d,
+  li.full-d,
+  li.facebook-d,
+  li.lead-d,
+  li.uber-d,
+  #image-d,
+  .card-d {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: #e5e5e5;
+  }
+
+  header {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+  }
+
+  header a {
+    padding: 26px 0 26px 155px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    padding-right: 142px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .container {
+    margin: 0;
+    border-bottom-left-radius: 80px;
+    background-color: #fff;
+  }
+
+  .headline {
+    display: flex;
+    background-image: url(./assets/desktop/desktopHeader.png);
+    padding: 288px 260px 255px 260px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    gap: 12px;
+  }
+
+  .headline h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .headline p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+  }
+
+  #social-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+  }
+
+  .works {
+    display: grid;
+    grid-template-columns: 1;
+    margin: 140px 142px 0 142px;
+    background-color: #e5e5e5;
+    border-radius: 24px;
+    gap: 142px 0;
+  }
+
+  .cards {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 24px 24px;
+    gap: 0 16px;
+    align-items: flex-start;
+  }
+
+  .cards:hover {
+    border: 2px solid #a7aeff;
+  }
+
+  .cards p {
+    margin: 0;
+  }
+
+  .cards ul {
+    margin: 0;
+  }
+
+  .works > div:nth-child(1) {
+    order: 2;
+  }
+
+  .card2 {
+    order: 3;
+  }
+
+  .card4 img {
+    order: 2;
+  }
+
+  .card2 img {
+    order: 2;
+  }
+
+  .card-2 {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .card-2 h2 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .card-2 p {
+    font-size: 16px;
+  }
+
+  .card-4 img {
+    order: 2;
+  }
+
+  li.canboy-m,
+  li.backend-m,
+  h2.tonic-m,
+  li.year-m,
+  ul#mobile-card1,
+  .card4p-m {
+    display: none;
+  }
+
+  h2.title360-d,
+  p.card-d {
+    display: block;
+  }
+
+  li.year-d,
+  li.uber-d,
+  li.ruby-d,
+  li.full-d,
+  li.facebook-d,
+  li.lead-d {
+    display: list-item;
+  }
+
+  #image-d {
+    display: inline;
+  }
+
+  #image-m {
+    display: none;
   }
 }
