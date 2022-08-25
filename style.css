@@ -199,6 +199,7 @@
 
   .about {
     margin-top: 114px;
+    gap: 25px;
   }
 
   .about-social {
@@ -664,7 +665,7 @@
   }
 
   .about-social button {
-    width: 27%;
+    max-width: 50%;
   }
 
   .about-list {
