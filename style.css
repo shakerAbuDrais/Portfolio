@@ -665,7 +665,7 @@
   }
 
   .about-social button {
-    max-width: 50%;
+    width: 200px;
   }
 
   .about-list {
