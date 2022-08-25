@@ -494,6 +494,9 @@
   header {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
+    position: fixed;
+    width: 100%;
+    top: 0;
   }
 
   header a {
