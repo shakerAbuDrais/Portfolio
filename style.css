@@ -646,4 +646,92 @@
   #image-m {
     display: none;
   }
+
+  /* working on the footer starts here */
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    background-color: #fff;
+  }
+
+  .about-social {
+    padding: 142px 0 134px 142px;
+    grid-area: 1;
+    margin: 0;
+  }
+
+  .about-social button {
+    width: 27%;
+  }
+
+  .about-list {
+    display: grid;
+    grid-template-areas:
+      "a a a a a"
+      "b b b b b"
+      "c c c c c"
+      "d d d d d";
+    padding: 142px 142px 166px 0;
+    margin: 0;
+  }
+
+  #lang {
+    grid-area: a;
+  }
+
+  #lang2,
+  #lang3,
+  #lang1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 12px;
+  }
+
+  #lang1 > img {
+    padding: 12px 62px 16px 0;
+  }
+
+  #lang2 > img {
+    padding: 12px 62px 16px 0;
+  }
+
+  #lang3 > img {
+    padding: 12px 62px 16px 0;
+  }
+
+  #framework {
+    grid-area: c;
+  }
+
+  #skills {
+    grid-area: d;
+  }
+
+  footer {
+    background-image: url(./assets/desktop/contactformbackground.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .contact-form {
+    padding: 142px 319px 127px 320px;
+  }
+
+  .contact-form h2 {
+    margin: 0;
+  }
+
+  .contact-form p {
+    padding: 0 116px;
+  }
+
+  form {
+    padding: 0 177px 87px 177px;
+    text-align: center;
+  }
+
+  .shape {
+    display: none;
+  }
 }
