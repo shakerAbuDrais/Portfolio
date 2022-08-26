@@ -739,9 +739,10 @@
     display: none;
   }
 
+  /* stylelint-disable-next-line no-descending-specificity */
   img:hover {
     border: 4px solid gold;
-    border-radius: 10px;  
+    border-radius: 10px;
   }
 
   button:active {
