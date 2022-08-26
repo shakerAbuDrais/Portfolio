@@ -738,4 +738,21 @@
   .shape {
     display: none;
   }
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  img:hover {
+    border: 4px solid gold;
+    border-radius: 10px;
+  }
+
+  button:active {
+    background-color: #2230d2;
+    transform: translateY(4px);
+    border-radius: 8px;
+    color: #fff;
+  }
+
+  button:hover {
+    cursor: grab;
+  }
 }
