@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shaker Abady Protfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <section class="container">
@@ -16,7 +17,13 @@
             <li>About</li>
             <li>Contact</li>
         </ul>
-        <nav class="flex-nav"><button>☰</button></nav>
+        <div id="myNav" class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+        <nav class="flex-nav"><button onclick="openNav()">☰</button></nav>
     </header>
     <div class="headline">
         <h1>I’m Mariane Glad to see you!</h1>
