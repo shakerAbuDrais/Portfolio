@@ -20,10 +20,9 @@
         <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a href="#portfoliostart" onclick="closeNav()">Portfolio</a>
+            <a href="#about-social" onclick="closeNav()">About</a>
+            <a href="#contact" onclick="closeNav()">Contact</a>
         </div>
         </div>
         <nav class="flex-nav"><button onclick="openNav()">☰</button></nav>
@@ -42,7 +41,7 @@
     </div>
     </section>
     <section class="works">
-        <div class="cards card0">
+        <div class="cards card0" id="portfoliostart">
             <img src="./assets/Snapshoot_Portfolio.png" alt="">
             <div class="card-2">
             <div class="card1">
@@ -148,7 +147,7 @@
             </div>
     </section>
     <section class="about">
-        <div class="about-social">
+        <div class="about-social" id="about-social">
         <h2>About <br> Myself</h2>
         <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
         <p id="social-title-1">LET’S CONNECT</p>
@@ -185,7 +184,7 @@
             </li>
         </ul>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <footer class="contact-form">
         <h2>Contact me</h2>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
