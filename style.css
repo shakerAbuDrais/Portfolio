@@ -485,6 +485,58 @@
   .card-d {
     display: none;
   }
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: none;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(96, 112, 255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 5%;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 25px;
+    right: 1%;
+    font-size: 40px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay a { font-size: 20px; }
+
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
 }
 
 @media (min-width: 768px) {
