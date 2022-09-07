@@ -75,6 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
       closeSign.classList.add('closesign');
       div2.appendChild(closeSign);
       closeSign.textContent = 'X';
+      closeSign.addEventListener('click', () => {
+        document.getElementsByClassName('div1')[0].style.display = 'none';
+      });
       const img = document.createElement('img');
       img.classList.add('img-pop');
       div1.appendChild(img);
@@ -116,7 +119,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-
-function closeSign() {
-  document.getElementsByClassName('div1').style.display = 'none';
-}
