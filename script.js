@@ -60,6 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
     item.addEventListener('click', () => {
       const div1 = document.createElement('div');
       div1.classList.add('div1');
+      const div2 = document.createElement('div');
+      div2.classList.add('div2');
+      div1.appendChild(div2);
       const id = parseInt(item.parentElement.parentElement.classList[1].replace(/[^\d.]/g, ''), 10);
       const data = infoArray.find((item) => item.id === id);
       console.log(data);
@@ -67,7 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
       element1.appendChild(div1);
       const title1 = document.createElement('h2');
       title1.classList.add('h2-pop');
-      div1.appendChild(title1);
+      div2.appendChild(title1);
+      const closeSign = document.createElement('p');
+      closeSign.classList.add('closesign');
+      div2.appendChild(closeSign);
+      closeSign.textContent = 'X';
       const img = document.createElement('img');
       img.classList.add('img-pop');
       div1.appendChild(img);
@@ -110,6 +117,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-function newFunc() {
-
+function closeSign() {
+  document.getElementsByClassName('div1').style.display = 'none';
 }
