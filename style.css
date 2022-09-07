@@ -529,6 +529,94 @@
     font-size: 40px;
   }
 
+.div1 {
+    position: fixed;
+    bottom: 5%;
+    left: 2%;
+    right: 2%;
+    top: 5%;
+    z-index: 999;
+    display: grid;
+    grid-template-areas: "a a"
+    "b b"
+    "c c"
+    "d d"
+    "e e";
+    padding: 16px;
+    gap: 12px;
+    background: #FFFFFF;
+    border: 1px solid #DFE1E6;
+    border-radius: 16px;
+  }
+
+  .h2-pop {
+    grid-area: a;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172B4D;
+    text-align: left;
+  }
+
+  .img-pop {
+    grid-area: b;
+    width: 100%;
+  }
+
+  .para-pop {
+    padding: 0 2% 0 0;
+    margin-bottom: 0; 
+    overflow-y: hidden;
+    height: 200px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+    grid-area: c;
+  }
+
+  .ul-pop {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    list-style: none;
+    padding-left: 0;
+    grid-area: d;
+  }
+
+  .ul-pop .li-pop {
+    background-color: #EBEBFF;
+    padding: 10px;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070FF;
+  }
+
+  .btn-pop {
+    display: inline;
+    padding: 12px 22px;
+    border: 1px solid #6070FF;
+    border-radius: 8px;
+    background-color: white;
+  }
+
+  .btn-pop a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    color: #396DF2;
+  }
+
+
+
+
   @media screen and (max-height: 450px) {
     .overlay a { font-size: 20px; }
 
@@ -537,15 +625,6 @@
       top: 15px;
       right: 35px;
     }
-  }
-
-  .div1 {
-    position: fixed;
-    bottom: 0;
-    right: 15px;
-    border: 3px solid #f1f1f1;
-    z-index: 9;
-    background-color: #253858;
   }
 }
 
