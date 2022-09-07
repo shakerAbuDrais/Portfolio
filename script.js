@@ -1,5 +1,5 @@
-/* eslint-disable no-plusplus */
 /* eslint-disable linebreak-style */
+/* eslint-disable no-plusplus */
 /* eslint-disable no-unused-vars */
 /* eslint-disable linebreak-style */
 function openNav() {
@@ -53,11 +53,12 @@ const infoArray = [
     sourceLink: sourceLink[0],
   },
 ];
-
+let counter = -1;
 document.addEventListener('DOMContentLoaded', () => {
-  //const btn = document.querySelectorAll('.btn');
-  document.querySelectorAll('.btn').forEach(item => {
+  // const btn = document.querySelectorAll('.btn');
+  document.querySelectorAll('.btn').forEach((item) => {
     item.addEventListener('click', () => {
+      counter += 1;
       const div1 = document.createElement('div');
       div1.classList.add('div1');
       const div2 = document.createElement('div');
@@ -76,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
       div2.appendChild(closeSign);
       closeSign.textContent = 'X';
       closeSign.addEventListener('click', () => {
-        document.getElementsByClassName('div1')[0].style.display = 'none';
+        document.getElementsByClassName('div1')[counter].style.display = 'none';
       });
       const img = document.createElement('img');
       img.classList.add('img-pop');
