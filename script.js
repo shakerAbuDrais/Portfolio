@@ -59,6 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.btn').forEach((item) => {
     item.addEventListener('click', () => {
       counter += 1;
+      const blur = document.getElementById('blur');
+      blur.classList.toggle('active');
       const div1 = document.createElement('div');
       div1.classList.add('div1');
       const div2 = document.createElement('div');
@@ -78,6 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
       closeSign.textContent = 'X';
       closeSign.addEventListener('click', () => {
         document.getElementsByClassName('div1')[counter].style.display = 'none';
+        const blur = document.getElementById('blur');
+        blur.classList.toggle('active');
       });
       const img = document.createElement('img');
       img.classList.add('img-pop');
