@@ -12,7 +12,7 @@ function closeNav() {
 const pName = ['Tonic', 'Multi-Post Stories', 'Facebook360', 'Uber Navigation'];
 const description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
 const technologies = ['Html', 'Css', 'Javascript'];
-const featuredimg = ['./assets/desktop1.png', './assets/Snapshoot1.png', './assets/Snapshoot2.png', './assets/desktop1.png'];
+const featuredimg = ['./assets/Snapshoot_Portfolio.png', './assets/Snapshoot1.png', './assets/Snapshoot2.png', './assets/desktop1.png'];
 const liveLink = ['https://shakerabudrais.github.io/Portfolio/'];
 const sourceLink = ['https://github.com/shakerAbuDrais/Portfolio'];
 const infoArray = [
@@ -26,7 +26,7 @@ const infoArray = [
     sourceLink: sourceLink[0],
   },
   {
-    id: 3,
+    id: 1,
     name: pName[1],
     featuredimg: featuredimg[1],
     description,
