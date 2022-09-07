@@ -897,3 +897,28 @@
     cursor: grab;
   }
 }
+
+.div1 {
+  position: absolute;
+  height: fit-content;
+  grid-template-areas: "a a"
+  "b b"
+  "c c"
+}
+
+.h2-pop {
+  grid-area: a;
+}
+
+.para-pop {
+  grid-area: c;
+}
+
+.ul-pop {
+
+}
+
+.btn-pop {
+  grid-area: c c;
+}
+
