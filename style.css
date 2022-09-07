@@ -517,6 +517,13 @@
     transition: 0.3s;
   }
 
+  .btn-pop a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    color: #396df2;
+  }
+
   .overlay a:hover,
   .overlay a:focus {
     color: #f1f1f1;
@@ -529,7 +536,7 @@
     font-size: 40px;
   }
 
-.div1 {
+  .div1 {
     position: fixed;
     bottom: 5%;
     left: 2%;
@@ -538,26 +545,26 @@
     z-index: 999;
     display: grid;
     grid-template-areas:
-    "a a"
-    "b b"
-    "c c"
-    "d d"
-    "e e";
+      "a a"
+      "b b"
+      "c c"
+      "d d"
+      "e e";
     padding: 16px;
     gap: 12px;
-    background: #FFFFFF;
-    border: 1px solid #DFE1E6;
+    background: #fff;
+    border: 1px solid #dfe1e6;
     border-radius: 16px;
   }
 
   .h2-pop {
     grid-area: a;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
-    color: #172B4D;
+    color: #172b4d;
     text-align: left;
   }
 
@@ -568,7 +575,7 @@
 
   .para-pop {
     padding: 0 2% 0 0;
-    margin-bottom: 0; 
+    margin-bottom: 0;
     overflow-y: hidden;
     height: 200px;
     font-style: normal;
@@ -606,13 +613,6 @@
     border: 1px solid #6070ff;
     border-radius: 8px;
     background-color: white;
-  }
-
-  .btn-pop a {
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 500;
-    color: #396df2;
   }
 
   .div2 {
