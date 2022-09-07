@@ -7,6 +7,7 @@
   body {
     margin: 0;
     overflow-x: hidden;
+    position: relative;
   }
 
   .container {
@@ -516,6 +517,13 @@
     transition: 0.3s;
   }
 
+  .btn-pop a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    color: #396df2;
+  }
+
   .overlay a:hover,
   .overlay a:focus {
     color: #f1f1f1;
@@ -526,6 +534,96 @@
     top: 25px;
     right: 1%;
     font-size: 40px;
+  }
+
+  .div1 {
+    position: fixed;
+    bottom: 5%;
+    left: 2%;
+    right: 2%;
+    top: 5%;
+    z-index: 999;
+    display: grid;
+    grid-template-areas:
+      "a a"
+      "b b"
+      "c c"
+      "d d"
+      "e e";
+    padding: 16px;
+    gap: 12px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    max-height: fit-content;
+  }
+
+  .h2-pop {
+    grid-area: a;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    text-align: left;
+  }
+
+  .img-pop {
+    grid-area: b;
+    width: 100%;
+  }
+
+  .para-pop {
+    padding: 0 2% 0 0;
+    margin-bottom: 0;
+    overflow-y: hidden;
+    height: 200px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+    grid-area: c;
+  }
+
+  .ul-pop {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    list-style: none;
+    padding-left: 0;
+    grid-area: d;
+  }
+
+  .ul-pop .li-pop {
+    background-color: #ebebff;
+    padding: 10px;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+  }
+
+  .btn-pop {
+    display: inline;
+    padding: 12px 22px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    background-color: white;
+  }
+
+  .div2 {
+    display: flex;
+    justify-content: space-between;
+    grid-area: a;
+  }
+
+  #blur.active {
+    filter: blur(5px);
   }
 
   @media screen and (max-height: 450px) {
@@ -806,5 +904,39 @@
 
   button:hover {
     cursor: grab;
+  }
+
+  .div1 {
+    display: block;
+    position: fixed;
+    padding: 3%;
+    width: 80%;
+    margin-left: 5%;
+    overflow: hidden;
+    max-height: 80%;
+  }
+
+  .btn-pop {
+    margin: 0 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .img-pop {
+    height: 70%;
+    width: 100%;
+  }
+
+  .para-pop {
+    margin: 0;
+    float: left;
+    width: 60%;
+  }
+
+  .ul-pop {
+    float: left;
+    width: 30%;
   }
 }
