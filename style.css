@@ -7,6 +7,7 @@
   body {
     margin: 0;
     overflow-x: hidden;
+    position: relative;
   }
 
   .container {
@@ -536,6 +537,15 @@
       top: 15px;
       right: 35px;
     }
+  }
+
+  .div1 {
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color: #253858;
   }
 }
 

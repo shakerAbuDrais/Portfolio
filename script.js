@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 /* eslint-disable linebreak-style */
 /* eslint-disable no-unused-vars */
 /* eslint-disable linebreak-style */
@@ -12,10 +13,11 @@ const pName = ['Tonic', 'Multi-Post Stories', 'Facebook360', 'Uber Navigation'];
 const description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
 const technologies = ['Html', 'Css', 'Javascript'];
 const featuredimg = ['./assets/desktop1.png', './assets/Snapshoot1.png', './assets/Snapshoot2.png', './assets/desktop1.png'];
-const liveLink = [];
-const sourceLink = [];
+const liveLink = ['https://shakerabudrais.github.io/Portfolio/'];
+const sourceLink = ['https://github.com/shakerAbuDrais/Portfolio'];
 const infoArray = [
   {
+    id: 0,
     name: pName[0],
     featuredimg: featuredimg[0],
     description,
@@ -24,6 +26,7 @@ const infoArray = [
     sourceLink: sourceLink[0],
   },
   {
+    id: 3,
     name: pName[1],
     featuredimg: featuredimg[1],
     description,
@@ -32,6 +35,7 @@ const infoArray = [
     sourceLink: sourceLink[0],
   },
   {
+    id: 2,
     name: pName[2],
     featuredimg: featuredimg[2],
     description,
@@ -40,6 +44,7 @@ const infoArray = [
     sourceLink: sourceLink[0],
   },
   {
+    id: 3,
     name: pName[3],
     featuredimg: featuredimg[3],
     description,
@@ -50,20 +55,58 @@ const infoArray = [
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
-  const btn = document.getElementById('btn1');
-  btn.addEventListener('click', () => {
-    const div1 = document.createElement('div');
-    div1.classList.add('div1');
-    const element1 = document.querySelector('.works');
-    element1.appendChild(div1);
-    console.log(element1);
-    for (let i = 0; i < infoArray.length; i++ ) {
+  //const btn = document.querySelectorAll('.btn');
+  document.querySelectorAll('.btn').forEach(item => {
+    item.addEventListener('click', () => {
+      const div1 = document.createElement('div');
+      div1.classList.add('div1');
+      const id = parseInt(item.parentElement.parentElement.classList[1].replace(/[^\d.]/g, ''), 10);
+      const data = infoArray.find((item) => item.id === id);
+      console.log(data);
+      const element1 = document.querySelector('body');
+      element1.appendChild(div1);
       const title1 = document.createElement('h2');
       title1.classList.add('h2-pop');
       div1.appendChild(title1);
-      document.getElementsByClassName('h2-pop')[i].textContent = infoArray[i].name;
-    }
-    console.log(document.getElementsByClassName('h2-pop')[0]);
+      const img = document.createElement('img');
+      img.classList.add('img-pop');
+      div1.appendChild(img);
+      title1.textContent = data.name;
+      img.src = data.featuredimg;
+      const para = document.createElement('p');
+      para.classList.add('para-pop');
+      div1.appendChild(para);
+      para.textContent = data.description;
+      const ul = document.createElement('ul');
+      ul.classList.add('ul-pop');
+      div1.appendChild(ul);
+      for (let i = 0; i < technologies.length; i++) {
+        const li = document.createElement('li');
+        li.classList.add('li-pop');
+        ul.appendChild(li);
+        li.textContent = data.technologies[i];
+
+        if (i < 2) {
+          if (i === 0) {
+            const btnPop = document.createElement('button');
+            btnPop.classList.add('btn-pop');
+            div1.appendChild(btnPop);
+            const aBtn = document.createElement('a');
+            aBtn.href = data.liveLink;
+            btnPop.appendChild(aBtn);
+            aBtn.textContent = 'See Live';
+          } else if (i === 1) {
+            const btnPop = document.createElement('button');
+            btnPop.classList.add('btn-pop');
+            div1.appendChild(btnPop);
+            const aBtn = document.createElement('a');
+            aBtn.href = data.sourceLink;
+            btnPop.appendChild(aBtn);
+            aBtn.textContent = 'See Source';
+          }
+        }
+      }
+    });
   });
 });
 
