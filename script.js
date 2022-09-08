@@ -13,17 +13,8 @@ function closeNav() {
 const submit = document.getElementById('submit');
 submit.addEventListener('click', (e) => {
   const email = document.getElementById('email').value;
-  const name1 = document.getElementById('name').value;
-  const message = document.getElementById('message').value;
   const emailLower = email.toLowerCase();
   const text = document.getElementById('text');
-  const userInputData = {
-    name1,
-    email,
-    message,
-  };
-  const savedData = JSON.stringify(userInputData);
-  localStorage.setItem('allData', savedData);
   if (email !== emailLower) {
     e.preventDefault();
     text.innerText = 'please enter the right email';
