@@ -30,6 +30,18 @@ submit.addEventListener('click', (e) => {
   }
 });
 
+window.addEventListener('load', () => {
+  const email = document.getElementById('email');
+  const name1 = document.getElementById('name');
+  const message = document.getElementById('message');
+  const newName = JSON.parse(localStorage.getItem('allData'));
+  const newEmail = JSON.parse(localStorage.getItem('allData'));
+  const newMessage = JSON.parse(localStorage.getItem('allData'));
+  email.value = newEmail.email;
+  name1.value = newName.name1;
+  message.value = newMessage.message;
+});
+
 const pName = ['Tonic', 'Multi-Post Stories', 'Facebook360', 'Uber Navigation'];
 const description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
 const technologies = ['Html', 'Css', 'Javascript'];
