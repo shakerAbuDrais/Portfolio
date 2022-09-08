@@ -30,6 +30,24 @@ submit.addEventListener('click', (e) => {
   }
 });
 
+const local = document.querySelectorAll('.local');
+for (let i = 0; i < local.length; i++) {
+  local[i].addEventListener('keydown', (e) => {
+    const email = document.getElementById('email').value;
+    const name1 = document.getElementById('name').value;
+    const message = document.getElementById('message').value;
+    const emailLower = email.toLowerCase();
+    const text = document.getElementById('text');
+    const userInputData = {
+      name1,
+      email,
+      message,
+    };
+    const savedData = JSON.stringify(userInputData);
+    localStorage.setItem('allData', savedData);
+  });
+}
+
 window.addEventListener('load', () => {
   const email = document.getElementById('email');
   const name1 = document.getElementById('name');
