@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shaker Abady Protfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <section class="container blur">
@@ -188,7 +187,7 @@
         <footer class="contact-form">
         <h2>Contact me</h2>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-        <form action="https://formspree.io/f/xlevdjlz" method="POST">
+        <form name="form" action="https://formspree.io/f/xlevdjlz" method="POST">
             <ul>
                 <li>
                     <label for="name"></label>
@@ -202,7 +201,8 @@
                     <label for="message"></label>
                     <textarea id="message" placeholder="Enter your message here" maxlength="500" required></textarea>
                 </li>
-                <li><button type="submit"><span> Get in touch </span></button></li>
+                <li><button id="submit" type="submit"><span> Get in touch </span></button></li>
+                <span id="text"></span>
                 <li>
                     <div class="shape"><img src="./assets/Shape.png" alt=""></div>
                 </li>
@@ -210,5 +210,6 @@
         </form>
         </footer>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
