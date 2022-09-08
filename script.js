@@ -13,12 +13,33 @@ function closeNav() {
 const submit = document.getElementById('submit');
 submit.addEventListener('click', (e) => {
   const email = document.getElementById('email').value;
+  const name1 = document.getElementById('name').value;
+  const message = document.getElementById('message').value;
   const emailLower = email.toLowerCase();
   const text = document.getElementById('text');
+  const userInputData = {
+    name1,
+    email,
+    message,
+  };
+  const savedData = JSON.stringify(userInputData);
+  localStorage.setItem('allData', savedData);
   if (email !== emailLower) {
     e.preventDefault();
     text.innerText = 'please enter the right email';
   }
+});
+
+window.addEventListener('load', () => {
+  const email = document.getElementById('email');
+  const name1 = document.getElementById('name');
+  const message = document.getElementById('message');
+  const newName = JSON.parse(localStorage.getItem('allData'));
+  const newEmail = JSON.parse(localStorage.getItem('allData'));
+  const newMessage = JSON.parse(localStorage.getItem('allData'));
+  email.value = newEmail.email;
+  name1.value = newName.name1;
+  message.value = newMessage.message;
 });
 
 const pName = ['Tonic', 'Multi-Post Stories', 'Facebook360', 'Uber Navigation'];
